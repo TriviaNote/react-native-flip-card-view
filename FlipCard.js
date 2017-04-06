@@ -46,12 +46,12 @@ var FlipCard = React.createClass({
             outputRange: ['0deg', '360deg', '0deg']
         });
         return (
-            <TouchableOpacity onPress={this._flipToggleCard} style={styles.animatedContainer}>
+            <View style={styles.animatedContainer}>
                 <Animated.View
                     style={[styles.animatedContainer,{transform: [{rotateX}]}]}>
                     {this.flippedCardView(this.state.isFlipped)}
                 </Animated.View>
-            </TouchableOpacity>);
+            </View>);
     },
 
 
